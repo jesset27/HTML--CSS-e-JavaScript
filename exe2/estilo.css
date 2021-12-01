@@ -5,6 +5,7 @@
 
 body{
     font: normal 15pt Arial;
+    background: rgb(70, 142, 236);
 }
 
 header {
@@ -27,7 +28,6 @@ footer {
     font-style: italic;
 }
 
-div {
-    text-align: center;
-    padding: 8px;
+input, label {
+    margin-bottom: 25px;
 }

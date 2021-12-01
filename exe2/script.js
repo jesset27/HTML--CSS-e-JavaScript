@@ -1,26 +1,14 @@
-function carregar(){
-    var msg = window.document.getElementById("msg")
-
-    var img = window.document.getElementById("imagem")
-    
-    var bom = window.document.getElementById("bom")
+function verificar(){
     var data = new Date()
-    var hora = data.getHours()
-    var minutos = data.getMinutes()
-    msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos.`
-    if (hora >= 0 && hora < 12){
-        img.src = "./imagens/manha.png"
-        document.body.style.background = "#e2cd9f"
-        bom.innerHTML = "Bom Dia!!!"
-    }
-    else if (hora >= 12 && hora < 18){
-        img.src = "./imagens/tarde.png"
-        document.body.style.background = "#b9846f"
-        bom.innerHTML = "Boa Tarde!!!"
+    var ano = data.getFullYear()
+    var fano = document.getElementById("txtano")
+    var res = document.getElementById("res")
+    if (fano.ariaValueMax.length == 0 || Number(fano.value) > ano){
+        window.alert("(ERRO) Verifique os dados e tente novamente!")
     }
     else {
-        img.src = "./imagens/noite.png"
-        document.body.style.background = "#515154"
-        bom.innerHTML = "Boa Noite!!!"
+        var fsex = document.getElementsByName("radsex")
+        var idade = ano - Number(fano.value)
+        res.innerHTML = `Idade calculada: ${idade}`
     }
 }
