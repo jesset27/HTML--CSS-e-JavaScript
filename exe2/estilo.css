@@ -18,6 +18,7 @@ section {
     border-radius: 10px;
     padding: 15px;
     width: 500px;
+    height: 500px;
     margin: 0 auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.342);
 }
@@ -30,4 +31,15 @@ footer {
 
 input, label {
     margin-bottom: 25px;
+}
+div#res {
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+div#res img {
+    width: 100px;
+    margin: 0 auto;
+    border: 1px solid red;
 }
