@@ -32,6 +32,6 @@ input, label {
     margin-bottom: 25px;
 }
 
-div#res {
+div#res, div#txt {
     text-align: center;
 }
