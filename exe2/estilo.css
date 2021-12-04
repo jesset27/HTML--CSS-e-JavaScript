@@ -32,14 +32,3 @@ footer {
 input, label {
     margin-bottom: 25px;
 }
-div#res {
-    text-align: center;
-    margin: 0 auto;
-    border: 1px solid red;
-}
-
-div#res img {
-    width: 100px;
-    margin: 0 auto;
-    border: 1px solid red;
-}
