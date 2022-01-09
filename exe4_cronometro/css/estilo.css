@@ -19,45 +19,31 @@ body {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+    margin-top: 100px;
 }
 
-form input, form label, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+button {
+    padding: 10px;
+    font-size: 2em;
+    background-color: var(--primary-color);
+    color: white;
 }
 
-form input {
-    font-size: 24px;
-    height: 50px;
-    padding: 0 20px;
+button:hover {
+    background-color: var(--primary-color-darker);
+    color: #ccc;
 }
 
-form input:focus {
-    outline: qpx solid var(--primary-color);
-}
-
-form button {
-    border: none;
-    background: var(--primary-color);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    height: 50px;
-    cursor: pointer;
-    margin-top: 30px;
-}
-
-form button:hover {
-    background: var(--primary-color-darker);
-}
-
-form button:active {
-    background: red;
+h1 {
+    font-size: 3em;
 }
 
 p {
     margin: 50px 0;
+}
+
+h1, p {
+    text-align: center;
 }
 
 .relogio {
@@ -66,16 +52,4 @@ p {
 
 .pausado {
     color: red;
-}
-h1 {
-    font-size: 3em;
-}
-
-h1, p {
-    text-align: center;
-}
-
-button {
-    padding: 10px;
-    font-size: 2em
 }

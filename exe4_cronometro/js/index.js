@@ -41,24 +41,3 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// iniciar.addEventListener('click' , function(event) {
-//     relogio.classList.remove('pausado');
-//     console.log('Cliquei no iniciar');
-//     clearInterval(timer);
-//     iniciaRelogio();
-   
-// })
-
-
-// pausar.addEventListener('click' , function(event) {
-//     relogio.classList.add('pausado');
-//     console.log('Cliquei no pausar');
-//     clearInterval(timer);
-// })
-
-// zerar.addEventListener('click' , function(event) {
-//     console.log('Cliquei no zerar');
-//     clearInterval(timer);
-//     relogio.innerHTML = '00:00:00';
-//     segundos = 0;
-// })
