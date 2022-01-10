@@ -11,6 +11,14 @@ function clickBotao() {
             clear();
         }
 
+        if (event.classList.contains('btn-del')) {
+            del();
+        }
+
+        if (event.classList.contains('btn-eq')) {
+            soma();
+        }
+
     });
 
     function btnParaDisplay(valor) {
@@ -19,6 +27,18 @@ function clickBotao() {
     
     function clear() {
         display.value = '';
+    }
+
+    function del() {
+        display.value = display.value.slice(0, -1);
+    }
+
+    function soma() {
+        let conta = display.value;
+
+        conta = eval(conta);
+        clear();
+        btnParaDisplay(conta);
     }
 }
 
