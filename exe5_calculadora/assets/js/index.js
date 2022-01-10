@@ -7,10 +7,18 @@ function clickBotao() {
             btnParaDisplay(event.innerText);
         }
 
+        if (event.classList.contains('btn-clear')) {
+            clear();
+        }
+
     });
 
     function btnParaDisplay(valor) {
         display.value += valor;
+    }
+    
+    function clear() {
+        display.value = '';
     }
 }
 
